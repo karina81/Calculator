@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class Calculator {
+    public static void main(String[] args) {
+
+
+
+        //System.out.println ("choose an operator: +,-, *,/");
+        Scanner input = new Scanner (System.in);
+        int a = input.nextInt();
+        int b  = input.nextInt();
+        String choice = input.next();
+        System.out.println(choice);
+
+        if (choice.equals("+")){
+            System.out.println(a+b);
+        }
+        if (choice.equals("-")){
+            System.out.println(a-b);
+        }
+        if (choice.equals("*")){
+            System.out.println(a*b);
+        }
+        if (choice.equals("/")){
+            System.out.println(a/b);
+        }
+    }
+
+
